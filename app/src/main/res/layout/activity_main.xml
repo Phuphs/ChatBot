@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cool"
+    tools:context=".ui.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#9E9797"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_message"
+            android:inputType="textShortMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight=".8"
+            android:background="@drawable/round_btn"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Type a message..."
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:singleLine="true" />
+     <ImageButton
+         android:layout_width="40dp"
+         android:layout_height="65dp"
+         android:src="@drawable/micro_phone"
+         android:background="#9E9797"
+         android:id="@+id/microPhone"/>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/round_btn"
+
+            android:text="Send"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_layout_bar"
+        android:layout_below="@+id/dark_divider"
+        tools:itemCount="20"
+        tools:listitem="@layout/message_item" />
+
+    <View
+        android:id="@+id/dark_divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+         />
+
+
+</RelativeLayout>
