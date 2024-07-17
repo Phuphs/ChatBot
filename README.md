@@ -15,3 +15,11 @@ The ChatBot is trained to perform tasks as the following:
 10.The ChatBot Answers all the things in voice(device voice)
 11."tell me a joke"
 12."solve 'x+/-/*/'/'"
+
+
+https://github.com/user-attachments/assets/034e59ba-60d3-4e31-a2c6-da11fdae5c0a
+
+
+
+https://github.com/user-attachments/assets/06e7815f-f6ac-4653-8b27-5ef2305f9d3c
+
